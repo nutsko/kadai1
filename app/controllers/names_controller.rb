@@ -69,6 +69,6 @@ class NamesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def name_params
-      params.require(:name).permit(:first_name, :last_name)
+      params.require(:name).permit(:first_name, :last_name, :age)
     end
 end
